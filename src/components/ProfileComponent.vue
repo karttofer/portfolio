@@ -71,7 +71,7 @@ export default {
     </template>
     <template #title> <p class="profile-fonts">Jhornan Colina</p> </template>
     <template #subtitle>
-      <p class="profile-fonts">Remote Frontend Developer</p>
+      <p class="profile-fonts">Remote FullStack Developer</p>
       <p class="profile-fonts-location-info">
         Colombiaㅤ-ㅤ<a
           href="https://www.linkedin.com/in/jhornancolina/overlay/contact-info/"
