@@ -1,0 +1,61 @@
+@import './styles/variables.scss';
+@import 'primeicons/primeicons.css';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $-background;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0px;
+}
+
+/* BUTTON CORE CHANGES */
+.p-button.p-button-link {
+  color: $-user-contact-info;
+  padding: 0px;
+}
+
+.p-button.p-button-link:not(:disabled):focus {
+  box-shadow: none;
+}
+
+/* CARD CORE CHANGES */
+.p-card {
+  width: 25em;
+  background: none !important;
+  box-shadow: none;
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 100%;
+  }
+}
+
+.p-card-body {
+  padding: 0px;
+}
+
+/* DIVIDER */
+
+.p-divider {
+  &::before {
+    width: 50%;
+    display: flex;
+    left: 25%;
+    border-top: 1px solid $-dates-shapes;
+  }
+}
+
+/* NATIVE */
+::-webkit-scrollbar {
+  display: none; /* Para navegadores basados en WebKit, como Chrome y Safari */
+}

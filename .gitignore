@@ -1,0 +1,11 @@
+# VS
+.vscode
+
+# Packapge
+.yarn
+
+# T2T
+cypress
+
+# Node
+/node_modules

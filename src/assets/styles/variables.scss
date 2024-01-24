@@ -1,0 +1,35 @@
+/* THEME COLORS */
+$-background: #0a0d16;
+
+$-user-name-subname: #ffffff;
+$-user-location: #bbbbbb;
+$-user-contact-info: #6397ff;
+
+$-dates-shapes: #3e5186;
+
+$-exp-time: #303c62;
+$-exp-title: #ffffff;
+$-exp-subtitle-tech: #4d64a6;
+$-exp-context: #ffffff;
+
+$-myself-description-font-folor: #d3d7ff;
+
+/* SIZES */
+
+$-profile-user-title: 17px;
+$-profile-user-subtitle: 17px;
+$-profile-user-location: 12px;
+$-profile-user-contact-info: 12px;
+$-profile-skills: 12px;
+$-profile-description: 12px;
+$-profile-work-date: 11px;
+$-profile-exp: 12px;
+$-profile-exp-techs: 11px;
+
+$mobile-breakpoint: 940px;
+
+/* THEME MIXINS */
+@mixin imgSize {
+  width: 180px;
+  height: 180px;
+}
