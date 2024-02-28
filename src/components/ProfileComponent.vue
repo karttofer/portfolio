@@ -67,19 +67,18 @@ export default {
 <template>
   <Card>
     <template #header>
-      <img alt="profile" class="profile-picture" src="../assets/imges/my-image.jpg" />
+      <img alt="profile" class="profile-picture" src="../assets/imges/my-image.jpg" data-cy="profile-img" />
     </template>
-    <template #title> <p class="profile-fonts">Jhornan Colina</p> </template>
+    <template #title>
+      <p class="profile-fonts" data-cy="profile-name">Jhornan Colina</p>
+    </template>
     <template #subtitle>
-      <p class="profile-fonts">Remote Frontend Developer</p>
-      <p class="profile-fonts-location-info">
-        Colombiaㅤ-ㅤ<a
-          href="https://www.linkedin.com/in/jhornancolina/overlay/contact-info/"
-          target="_blank"
-          >Contact Info</a
-        >
+      <p class="profile-fonts" data-cy="profile-field">Remote Frontend Developer</p>
+      <p class="profile-fonts-location-info" data-cy="profile-location">
+        Colombiaㅤ-ㅤ<a href="https://www.linkedin.com/in/jhornancolina/overlay/contact-info/" target="_blank">Contact
+          Info</a>
       </p>
-      <div class="profile-chips-container">
+      <div class="profile-chips-container" data-cy="profile-chips">
         <ChipsComponent :config="item" v-for="(item, index) in chips" :key="index" />
       </div>
     </template>
@@ -114,6 +113,7 @@ export default {
     border-radius: 100%;
     @include imgSize;
   }
+
   &-fonts {
     color: $-user-name-subname;
     margin: 7px 0px 7px 0px;
@@ -126,6 +126,7 @@ export default {
       color: $-user-location;
 
       @include completeAlign();
+
       a {
         color: $-user-contact-info;
       }

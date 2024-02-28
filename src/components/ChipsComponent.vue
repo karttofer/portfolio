@@ -16,8 +16,8 @@ export default {
 }
 </script>
 <template>
-  <div :style="{ width: `${config.size}px` }">
-    <p>{{ config?.label }}</p>
+  <div :style="{ width: `${config.size}px` }"  data-cy="chips">
+    <p data-cy="chips-text">{{ config?.label }}</p>
   </div>
 </template>
 <style scoped lang="scss">

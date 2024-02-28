@@ -12,6 +12,7 @@
     }
   ],
   "compilerOptions": {
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "types": ["cypress", "node", "cypress-real-events"]
   }
 }
